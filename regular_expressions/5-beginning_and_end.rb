@@ -1,6 +1,2 @@
 #!/usr/bin/env ruby
-
-input_string = ARGV[0] # Obtain the first command-line argument
-
-matches = input_string.match(/^h.n$/)
-puts matches
+puts ARGV[0].scan(/^h.?n$/).join
